@@ -12,7 +12,7 @@ float normalize(float value, float min, float max, bool higherIsBetter) {
     float normalized_value = (value - min) / (max - min);
     if (higherIsBetter) {  // if for this metric higher is better, do nothing
         return normalized_value;
-    } else {  // otherwise, take 1 - normalized_value (so 0 becomes 1 and 1 becomes 0)
+    } else {  // otherwise, take 1-normalized_value (so 0 becomes 1 and 1 becomes 0)
         return 1 - normalized_value;
     }
 }
