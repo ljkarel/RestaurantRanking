@@ -1,0 +1,164 @@
+\hypertarget{classRestaurant}{}\doxysection{Restaurant Class Reference}
+\label{classRestaurant}\index{Restaurant@{Restaurant}}
+
+
+This class represents a restaurant and its corresponding data and metrics.  
+
+
+
+
+{\ttfamily \#include $<$Restaurant.\+h$>$}
+
+
+
+Collaboration diagram for Restaurant\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRestaurant_adf7563b1b6baa31aa9cb92c34c8e9d20}{Restaurant}} (std\+::string \mbox{\hyperlink{classRestaurant_af4b6e04b37c93b51459fb728d32cff6f}{name}}, \mbox{\hyperlink{classDataValues}{Data\+Values}} $\ast$\mbox{\hyperlink{classRestaurant_ac05f99806054d0552d64f8629121bfd8}{data\+Values}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classRestaurant}{Restaurant}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRestaurant_acb1d786ab04bc4880e79f13d839b9cbc}\label{classRestaurant_acb1d786ab04bc4880e79f13d839b9cbc}} 
+\mbox{\hyperlink{classRestaurant_acb1d786ab04bc4880e79f13d839b9cbc}{$\sim$\+Restaurant}} ()
+\begin{DoxyCompactList}\small\item\em Destructs an existing \mbox{\hyperlink{classRestaurant}{Restaurant}} object, and its data and metric objects. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRestaurant_a303a033813a8a3aa618389e0078e8410}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the restaurant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDataValues}{Data\+Values}} $\ast$ \mbox{\hyperlink{classRestaurant_a8e8a3d2a1dd9cb3510c034f0fc94fa7e}{get\+Data\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Gets the raw data values of the restaurant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRestaurant_acc873765da6543f677c143cc7b22546f}{set\+Ranking\+Metrics}} (\mbox{\hyperlink{classRankingMetrics}{Ranking\+Metrics}} $\ast$\mbox{\hyperlink{classRestaurant_a8636dddd9c2f4c2a983c09c6c21d0737}{ranking\+Metrics}})
+\begin{DoxyCompactList}\small\item\em Sets the calculated performance metrics for the restaurant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRankingMetrics}{Ranking\+Metrics}} $\ast$ \mbox{\hyperlink{classRestaurant_a87fcef8ff48ec654addaf84daca9b6e7}{get\+Ranking\+Metrics}} ()
+\begin{DoxyCompactList}\small\item\em Gets the calculcated performance metrics for the restaurant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRestaurant_a1e8e3b282100ec6f75a780d57ae83b98}{set\+Performance\+Score}} (float \mbox{\hyperlink{classRestaurant_a3fdc49a2adf9bd6f44257e10958341f6}{performance\+Score}})
+\begin{DoxyCompactList}\small\item\em Sets the performance score of the restaurant. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classRestaurant_a7ca0f23e13afb65ba8750a30c10142bd}{get\+Performance\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Gets the performance score of the restaurant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRestaurant_af4b6e04b37c93b51459fb728d32cff6f}\label{classRestaurant_af4b6e04b37c93b51459fb728d32cff6f}} 
+std\+::string \mbox{\hyperlink{classRestaurant_af4b6e04b37c93b51459fb728d32cff6f}{name}}
+\begin{DoxyCompactList}\small\item\em The name of the restaurant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRestaurant_ac05f99806054d0552d64f8629121bfd8}\label{classRestaurant_ac05f99806054d0552d64f8629121bfd8}} 
+\mbox{\hyperlink{classDataValues}{Data\+Values}} $\ast$ \mbox{\hyperlink{classRestaurant_ac05f99806054d0552d64f8629121bfd8}{data\+Values}}
+\begin{DoxyCompactList}\small\item\em The raw data values of the restaurant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRestaurant_a8636dddd9c2f4c2a983c09c6c21d0737}\label{classRestaurant_a8636dddd9c2f4c2a983c09c6c21d0737}} 
+\mbox{\hyperlink{classRankingMetrics}{Ranking\+Metrics}} $\ast$ \mbox{\hyperlink{classRestaurant_a8636dddd9c2f4c2a983c09c6c21d0737}{ranking\+Metrics}}
+\begin{DoxyCompactList}\small\item\em The calculated performance metrics for the restaurant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRestaurant_a3fdc49a2adf9bd6f44257e10958341f6}\label{classRestaurant_a3fdc49a2adf9bd6f44257e10958341f6}} 
+float \mbox{\hyperlink{classRestaurant_a3fdc49a2adf9bd6f44257e10958341f6}{performance\+Score}}
+\begin{DoxyCompactList}\small\item\em The performance score (between 0 and 1) for the restaurant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a restaurant and its corresponding data and metrics. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRestaurant_adf7563b1b6baa31aa9cb92c34c8e9d20}\label{classRestaurant_adf7563b1b6baa31aa9cb92c34c8e9d20}} 
+\index{Restaurant@{Restaurant}!Restaurant@{Restaurant}}
+\index{Restaurant@{Restaurant}!Restaurant@{Restaurant}}
+\doxysubsubsection{\texorpdfstring{Restaurant()}{Restaurant()}}
+{\footnotesize\ttfamily Restaurant\+::\+Restaurant (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{classDataValues}{Data\+Values}} $\ast$}]{data\+Values }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classRestaurant}{Restaurant}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the restaurant. \\
+\hline
+{\em data\+Values} & The raw data of the restaurant. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRestaurant_a8e8a3d2a1dd9cb3510c034f0fc94fa7e}\label{classRestaurant_a8e8a3d2a1dd9cb3510c034f0fc94fa7e}} 
+\index{Restaurant@{Restaurant}!getDataValues@{getDataValues}}
+\index{getDataValues@{getDataValues}!Restaurant@{Restaurant}}
+\doxysubsubsection{\texorpdfstring{getDataValues()}{getDataValues()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataValues}{Data\+Values}} $\ast$ Restaurant\+::get\+Data\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the raw data values of the restaurant. 
+
+\begin{DoxyReturn}{Returns}
+The raw data values of the restaurant. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestaurant_a303a033813a8a3aa618389e0078e8410}\label{classRestaurant_a303a033813a8a3aa618389e0078e8410}} 
+\index{Restaurant@{Restaurant}!getName@{getName}}
+\index{getName@{getName}!Restaurant@{Restaurant}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Restaurant\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the name of the restaurant. 
+
+\begin{DoxyReturn}{Returns}
+The name of the restaurant. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestaurant_a7ca0f23e13afb65ba8750a30c10142bd}\label{classRestaurant_a7ca0f23e13afb65ba8750a30c10142bd}} 
+\index{Restaurant@{Restaurant}!getPerformanceScore@{getPerformanceScore}}
+\index{getPerformanceScore@{getPerformanceScore}!Restaurant@{Restaurant}}
+\doxysubsubsection{\texorpdfstring{getPerformanceScore()}{getPerformanceScore()}}
+{\footnotesize\ttfamily float Restaurant\+::get\+Performance\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the performance score of the restaurant. 
+
+\begin{DoxyReturn}{Returns}
+The performance score of the restaurant. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestaurant_a87fcef8ff48ec654addaf84daca9b6e7}\label{classRestaurant_a87fcef8ff48ec654addaf84daca9b6e7}} 
+\index{Restaurant@{Restaurant}!getRankingMetrics@{getRankingMetrics}}
+\index{getRankingMetrics@{getRankingMetrics}!Restaurant@{Restaurant}}
+\doxysubsubsection{\texorpdfstring{getRankingMetrics()}{getRankingMetrics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRankingMetrics}{Ranking\+Metrics}} $\ast$ Restaurant\+::get\+Ranking\+Metrics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the calculcated performance metrics for the restaurant. 
+
+\begin{DoxyReturn}{Returns}
+The calculated performance metrics for the restaurant. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestaurant_a1e8e3b282100ec6f75a780d57ae83b98}\label{classRestaurant_a1e8e3b282100ec6f75a780d57ae83b98}} 
+\index{Restaurant@{Restaurant}!setPerformanceScore@{setPerformanceScore}}
+\index{setPerformanceScore@{setPerformanceScore}!Restaurant@{Restaurant}}
+\doxysubsubsection{\texorpdfstring{setPerformanceScore()}{setPerformanceScore()}}
+{\footnotesize\ttfamily void Restaurant\+::set\+Performance\+Score (\begin{DoxyParamCaption}\item[{float}]{performance\+Score }\end{DoxyParamCaption})}
+
+
+
+Sets the performance score of the restaurant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em performance\+Score} & The performance score of the restaurant. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRestaurant_acc873765da6543f677c143cc7b22546f}\label{classRestaurant_acc873765da6543f677c143cc7b22546f}} 
+\index{Restaurant@{Restaurant}!setRankingMetrics@{setRankingMetrics}}
+\index{setRankingMetrics@{setRankingMetrics}!Restaurant@{Restaurant}}
+\doxysubsubsection{\texorpdfstring{setRankingMetrics()}{setRankingMetrics()}}
+{\footnotesize\ttfamily void Restaurant\+::set\+Ranking\+Metrics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRankingMetrics}{Ranking\+Metrics}} $\ast$}]{ranking\+Metrics }\end{DoxyParamCaption})}
+
+
+
+Sets the calculated performance metrics for the restaurant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ranking\+Metrics} & The calculated performance metrics for the restaurant. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Restaurant.\+h\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Restaurant.\+cpp\end{DoxyCompactItemize}

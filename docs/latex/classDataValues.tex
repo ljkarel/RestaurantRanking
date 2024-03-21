@@ -1,0 +1,167 @@
+\hypertarget{classDataValues}{}\doxysection{Data\+Values Class Reference}
+\label{classDataValues}\index{DataValues@{DataValues}}
+
+
+This class represents the raw data for a restaurant obtained from a CSV file.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Values.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataValues_a2fc3cef68e5aba5768df133df6134726}{Data\+Values}} (float \mbox{\hyperlink{classDataValues_afcd268d54fd652cbd441e2f56b342c62}{net\+Sales}}, int \mbox{\hyperlink{classDataValues_a42d9e27c171062fcd106fff73b5c57a9}{transaction\+Count}}, float \mbox{\hyperlink{classDataValues_ae1ec20ec2bd1d10815b768588b9dabc0}{cash\+Difference}}, int \mbox{\hyperlink{classDataValues_ad9cefd93aa0e27870ef21f72cf2c304c}{beverage\+Count}}, int \mbox{\hyperlink{classDataValues_a6bba060dbeaedc9c811f9d4bb4839abb}{speed\+Of\+Service}}, float \mbox{\hyperlink{classDataValues_ae0283a5cbc883341b081c39c6b03618f}{discount\+Total}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classDataValues}{Data\+Values}} object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classDataValues_a344c056872bdb86a221f6e7d81a95b4a}{get\+Net\+Sales}} ()
+\begin{DoxyCompactList}\small\item\em Gets the restaurant\textquotesingle{}s total sales. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataValues_a2020e0d4bc5c938bb420cd1a2bcf93fe}{get\+Transaction\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets the restaurant\textquotesingle{}s transaction count. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classDataValues_a8823050cf96e81cefdb11639624567d0}{get\+Cash\+Difference}} ()
+\begin{DoxyCompactList}\small\item\em Gets the restaurant\textquotesingle{}s cash difference. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataValues_ab347c0f50ddd5c89d0a7cf845f445c35}{get\+Beverage\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets the restaurant\textquotesingle{}s number of beverages sold. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataValues_add3c2d176fbbaadfc9ece209369a1073}{get\+Speed\+Of\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Gets the restaurant\textquotesingle{}s total service time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classDataValues_ac267714c7d71cbe71ab0c8c54ea7f9b8}{get\+Discount\+Total}} ()
+\begin{DoxyCompactList}\small\item\em Gets the restaurant\textquotesingle{}s discount total. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataValues_afcd268d54fd652cbd441e2f56b342c62}\label{classDataValues_afcd268d54fd652cbd441e2f56b342c62}} 
+float \mbox{\hyperlink{classDataValues_afcd268d54fd652cbd441e2f56b342c62}{net\+Sales}}
+\begin{DoxyCompactList}\small\item\em The restaurant\textquotesingle{}s total sales for the day, not including sales tax. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataValues_a42d9e27c171062fcd106fff73b5c57a9}\label{classDataValues_a42d9e27c171062fcd106fff73b5c57a9}} 
+int \mbox{\hyperlink{classDataValues_a42d9e27c171062fcd106fff73b5c57a9}{transaction\+Count}}
+\begin{DoxyCompactList}\small\item\em The total number of guest transactions that were processed in the restaurant that day. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataValues_ae1ec20ec2bd1d10815b768588b9dabc0}\label{classDataValues_ae1ec20ec2bd1d10815b768588b9dabc0}} 
+float \mbox{\hyperlink{classDataValues_ae1ec20ec2bd1d10815b768588b9dabc0}{cash\+Difference}}
+\begin{DoxyCompactList}\small\item\em How much extra or missing cash from the registers at the end of the day. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataValues_ad9cefd93aa0e27870ef21f72cf2c304c}\label{classDataValues_ad9cefd93aa0e27870ef21f72cf2c304c}} 
+int \mbox{\hyperlink{classDataValues_ad9cefd93aa0e27870ef21f72cf2c304c}{beverage\+Count}}
+\begin{DoxyCompactList}\small\item\em The number of beverages the restaurant sold. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataValues_a6bba060dbeaedc9c811f9d4bb4839abb}\label{classDataValues_a6bba060dbeaedc9c811f9d4bb4839abb}} 
+int \mbox{\hyperlink{classDataValues_a6bba060dbeaedc9c811f9d4bb4839abb}{speed\+Of\+Service}}
+\begin{DoxyCompactList}\small\item\em The total time that customers spent waiting on orders, in seconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataValues_ae0283a5cbc883341b081c39c6b03618f}\label{classDataValues_ae0283a5cbc883341b081c39c6b03618f}} 
+float \mbox{\hyperlink{classDataValues_ae0283a5cbc883341b081c39c6b03618f}{discount\+Total}}
+\begin{DoxyCompactList}\small\item\em The total value of discounts taken off of the purchase price for the day. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the raw data for a restaurant obtained from a CSV file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataValues_a2fc3cef68e5aba5768df133df6134726}\label{classDataValues_a2fc3cef68e5aba5768df133df6134726}} 
+\index{DataValues@{DataValues}!DataValues@{DataValues}}
+\index{DataValues@{DataValues}!DataValues@{DataValues}}
+\doxysubsubsection{\texorpdfstring{DataValues()}{DataValues()}}
+{\footnotesize\ttfamily Data\+Values\+::\+Data\+Values (\begin{DoxyParamCaption}\item[{float}]{net\+Sales,  }\item[{int}]{transaction\+Count,  }\item[{float}]{cash\+Difference,  }\item[{int}]{beverage\+Count,  }\item[{int}]{speed\+Of\+Service,  }\item[{float}]{discount\+Total }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classDataValues}{Data\+Values}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em net\+Sales} & The restaurant\textquotesingle{}s total sales. \\
+\hline
+{\em transaction\+Count} & The restaurant\textquotesingle{}s transaction count. \\
+\hline
+{\em cash\+Difference} & The restaurant\textquotesingle{}s cash difference. \\
+\hline
+{\em beverage\+Count} & The restaurant\textquotesingle{}s number of beverages sold. \\
+\hline
+{\em speed\+Of\+Service} & The restaurant\textquotesingle{}s total service time. \\
+\hline
+{\em discount\+Total} & The restaurant\textquotesingle{}s discount total. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataValues_ab347c0f50ddd5c89d0a7cf845f445c35}\label{classDataValues_ab347c0f50ddd5c89d0a7cf845f445c35}} 
+\index{DataValues@{DataValues}!getBeverageCount@{getBeverageCount}}
+\index{getBeverageCount@{getBeverageCount}!DataValues@{DataValues}}
+\doxysubsubsection{\texorpdfstring{getBeverageCount()}{getBeverageCount()}}
+{\footnotesize\ttfamily int Data\+Values\+::get\+Beverage\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the restaurant\textquotesingle{}s number of beverages sold. 
+
+\begin{DoxyReturn}{Returns}
+The restaurant\textquotesingle{}s number of beverages sold. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataValues_a8823050cf96e81cefdb11639624567d0}\label{classDataValues_a8823050cf96e81cefdb11639624567d0}} 
+\index{DataValues@{DataValues}!getCashDifference@{getCashDifference}}
+\index{getCashDifference@{getCashDifference}!DataValues@{DataValues}}
+\doxysubsubsection{\texorpdfstring{getCashDifference()}{getCashDifference()}}
+{\footnotesize\ttfamily float Data\+Values\+::get\+Cash\+Difference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the restaurant\textquotesingle{}s cash difference. 
+
+\begin{DoxyReturn}{Returns}
+The restaurant\textquotesingle{}s cash difference. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataValues_ac267714c7d71cbe71ab0c8c54ea7f9b8}\label{classDataValues_ac267714c7d71cbe71ab0c8c54ea7f9b8}} 
+\index{DataValues@{DataValues}!getDiscountTotal@{getDiscountTotal}}
+\index{getDiscountTotal@{getDiscountTotal}!DataValues@{DataValues}}
+\doxysubsubsection{\texorpdfstring{getDiscountTotal()}{getDiscountTotal()}}
+{\footnotesize\ttfamily float Data\+Values\+::get\+Discount\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the restaurant\textquotesingle{}s discount total. 
+
+\begin{DoxyReturn}{Returns}
+The restaurant\textquotesingle{}s discount total. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataValues_a344c056872bdb86a221f6e7d81a95b4a}\label{classDataValues_a344c056872bdb86a221f6e7d81a95b4a}} 
+\index{DataValues@{DataValues}!getNetSales@{getNetSales}}
+\index{getNetSales@{getNetSales}!DataValues@{DataValues}}
+\doxysubsubsection{\texorpdfstring{getNetSales()}{getNetSales()}}
+{\footnotesize\ttfamily float Data\+Values\+::get\+Net\+Sales (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the restaurant\textquotesingle{}s total sales. 
+
+\begin{DoxyReturn}{Returns}
+The restaurant\textquotesingle{}s total sales. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataValues_add3c2d176fbbaadfc9ece209369a1073}\label{classDataValues_add3c2d176fbbaadfc9ece209369a1073}} 
+\index{DataValues@{DataValues}!getSpeedOfService@{getSpeedOfService}}
+\index{getSpeedOfService@{getSpeedOfService}!DataValues@{DataValues}}
+\doxysubsubsection{\texorpdfstring{getSpeedOfService()}{getSpeedOfService()}}
+{\footnotesize\ttfamily int Data\+Values\+::get\+Speed\+Of\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the restaurant\textquotesingle{}s total service time. 
+
+\begin{DoxyReturn}{Returns}
+The restaurant\textquotesingle{}s total service time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataValues_a2020e0d4bc5c938bb420cd1a2bcf93fe}\label{classDataValues_a2020e0d4bc5c938bb420cd1a2bcf93fe}} 
+\index{DataValues@{DataValues}!getTransactionCount@{getTransactionCount}}
+\index{getTransactionCount@{getTransactionCount}!DataValues@{DataValues}}
+\doxysubsubsection{\texorpdfstring{getTransactionCount()}{getTransactionCount()}}
+{\footnotesize\ttfamily int Data\+Values\+::get\+Transaction\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the restaurant\textquotesingle{}s transaction count. 
+
+\begin{DoxyReturn}{Returns}
+The restaurant\textquotesingle{}s transaction count. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Data\+Values.\+h\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Data\+Values.\+cpp\end{DoxyCompactItemize}

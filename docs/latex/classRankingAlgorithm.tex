@@ -1,0 +1,64 @@
+\hypertarget{classRankingAlgorithm}{}\doxysection{Ranking\+Algorithm Class Reference}
+\label{classRankingAlgorithm}\index{RankingAlgorithm@{RankingAlgorithm}}
+
+
+This class represents the ranking algorithm, used for computing ranking metrics and ranking the restaurants.  
+
+
+
+
+{\ttfamily \#include $<$Ranking\+Algorithm.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRankingAlgorithm_a195a18bbe6950d7580337bb948b41466}{Ranking\+Algorithm}} (std\+::vector$<$ \mbox{\hyperlink{classRestaurant}{Restaurant}} $\ast$ $>$ \&\mbox{\hyperlink{classRankingAlgorithm_a0744b9f6b5e69f11dce05325e1e99ccc}{restaurants}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classRankingAlgorithm}{Ranking\+Algorithm}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingAlgorithm_af7d4cafdfb55775b1e5702c29fd33234}\label{classRankingAlgorithm_af7d4cafdfb55775b1e5702c29fd33234}} 
+void \mbox{\hyperlink{classRankingAlgorithm_af7d4cafdfb55775b1e5702c29fd33234}{rank\+Restaurants}} ()
+\begin{DoxyCompactList}\small\item\em Sort the restaurants according to their performance score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRankingAlgorithm_a6a847714f9f0b2156770364924304602}\label{classRankingAlgorithm_a6a847714f9f0b2156770364924304602}} 
+void \mbox{\hyperlink{classRankingAlgorithm_a6a847714f9f0b2156770364924304602}{compute\+Ranking\+Metrics}} ()
+\begin{DoxyCompactList}\small\item\em Computes the ranking metrics for each restaurant. Keeps track of the min and max values for each metric. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingAlgorithm_ad1332aed5fd555b9ef675b5996ab6aea}\label{classRankingAlgorithm_ad1332aed5fd555b9ef675b5996ab6aea}} 
+void \mbox{\hyperlink{classRankingAlgorithm_ad1332aed5fd555b9ef675b5996ab6aea}{compute\+Performance\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Computes the performance score for each restaurant, based on their metrics and the min and max values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRankingAlgorithm_a0744b9f6b5e69f11dce05325e1e99ccc}\label{classRankingAlgorithm_a0744b9f6b5e69f11dce05325e1e99ccc}} 
+std\+::vector$<$ \mbox{\hyperlink{classRestaurant}{Restaurant}} $\ast$ $>$ \& \mbox{\hyperlink{classRankingAlgorithm_a0744b9f6b5e69f11dce05325e1e99ccc}{restaurants}}
+\begin{DoxyCompactList}\small\item\em A vector of restaurants to be ranked (sorted). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingAlgorithm_a5da236b9579aea234e64ab7aebbab04c}\label{classRankingAlgorithm_a5da236b9579aea234e64ab7aebbab04c}} 
+std\+::vector$<$ std\+::pair$<$ float, float $>$ $>$ \mbox{\hyperlink{classRankingAlgorithm_a5da236b9579aea234e64ab7aebbab04c}{min\+Max\+Values}}
+\begin{DoxyCompactList}\small\item\em The minimum and maximum values for each ranking metric, used by helper functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the ranking algorithm, used for computing ranking metrics and ranking the restaurants. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRankingAlgorithm_a195a18bbe6950d7580337bb948b41466}\label{classRankingAlgorithm_a195a18bbe6950d7580337bb948b41466}} 
+\index{RankingAlgorithm@{RankingAlgorithm}!RankingAlgorithm@{RankingAlgorithm}}
+\index{RankingAlgorithm@{RankingAlgorithm}!RankingAlgorithm@{RankingAlgorithm}}
+\doxysubsubsection{\texorpdfstring{RankingAlgorithm()}{RankingAlgorithm()}}
+{\footnotesize\ttfamily Ranking\+Algorithm\+::\+Ranking\+Algorithm (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classRestaurant}{Restaurant}} $\ast$ $>$ \&}]{restaurants }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classRankingAlgorithm}{Ranking\+Algorithm}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restaurants} & A vector of restaurants to be ranked (sorted). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Ranking\+Algorithm.\+h\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Ranking\+Algorithm.\+cpp\end{DoxyCompactItemize}

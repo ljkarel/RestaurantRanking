@@ -1,0 +1,67 @@
+\hypertarget{classFileReader}{}\doxysection{File\+Reader Class Reference}
+\label{classFileReader}\index{FileReader@{FileReader}}
+
+
+This class represents a file reader, used for reading in data from a file.  
+
+
+
+
+{\ttfamily \#include $<$File\+Reader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFileReader_a9ce82a24500af1259a4bff8d19cb0474}{File\+Reader}} (std\+::string \mbox{\hyperlink{classFileReader_a2447d05b699d0eff1574c5d7fe66f8df}{filename}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classFileReader}{File\+Reader}} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classRestaurant}{Restaurant}} $\ast$ $>$ \mbox{\hyperlink{classFileReader_a144e89284bc9537b9f5670eeaa4b3489}{read\+File}} ()
+\begin{DoxyCompactList}\small\item\em Reads the file, obtaining the filename through user input, then creates restaurant data structures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFileReader_a2447d05b699d0eff1574c5d7fe66f8df}\label{classFileReader_a2447d05b699d0eff1574c5d7fe66f8df}} 
+std\+::string \mbox{\hyperlink{classFileReader_a2447d05b699d0eff1574c5d7fe66f8df}{filename}}
+\begin{DoxyCompactList}\small\item\em The filename of the data file (if one is passed via command line). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a file reader, used for reading in data from a file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFileReader_a9ce82a24500af1259a4bff8d19cb0474}\label{classFileReader_a9ce82a24500af1259a4bff8d19cb0474}} 
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{FileReader()}{FileReader()}}
+{\footnotesize\ttfamily File\+Reader\+::\+File\+Reader (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classFileReader}{File\+Reader}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the data file (if one is passed via command line). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFileReader_a144e89284bc9537b9f5670eeaa4b3489}\label{classFileReader_a144e89284bc9537b9f5670eeaa4b3489}} 
+\index{FileReader@{FileReader}!readFile@{readFile}}
+\index{readFile@{readFile}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classRestaurant}{Restaurant}} $\ast$ $>$ File\+Reader\+::read\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the file, obtaining the filename through user input, then creates restaurant data structures. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \mbox{\hyperlink{classRestaurant}{Restaurant}} objects with their raw data populated. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/File\+Reader.\+h\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/File\+Reader.\+cpp\end{DoxyCompactItemize}

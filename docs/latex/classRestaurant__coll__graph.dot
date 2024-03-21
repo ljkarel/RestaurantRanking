@@ -1,0 +1,11 @@
+digraph "Restaurant"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Restaurant",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This class represents a restaurant and its corresponding data and metrics."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rankingMetrics" ];
+  Node2 [label="RankingMetrics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRankingMetrics.html",tooltip="This class represents the performance metrics calculated from raw rata, used for ranking."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dataValues" ];
+  Node3 [label="DataValues",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataValues.html",tooltip="This class represents the raw data for a restaurant obtained from a CSV file."];
+}

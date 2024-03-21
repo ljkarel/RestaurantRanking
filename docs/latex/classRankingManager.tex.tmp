@@ -1,0 +1,72 @@
+\hypertarget{classRankingManager}{}\doxysection{Ranking\+Manager Class Reference}
+\label{classRankingManager}\index{RankingManager@{RankingManager}}
+
+
+This class represents the driver for the ranking program, controlling IO, algorithm, and data objects.  
+
+
+
+
+{\ttfamily \#include $<$Ranking\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Ranking\+Manager\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRankingManager_a585d291d39a2a1e5009a82a81345e1bc}{Ranking\+Manager}} (std\+::string \mbox{\hyperlink{classRankingManager_a1bb600c2734db3b8f6f7c96fe3bbfbe4}{filename}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classRankingManager}{Ranking\+Manager}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingManager_ae09ba89daabb2460c54017b2a0bc0e5e}\label{classRankingManager_ae09ba89daabb2460c54017b2a0bc0e5e}} 
+\mbox{\hyperlink{classRankingManager_ae09ba89daabb2460c54017b2a0bc0e5e}{$\sim$\+Ranking\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructs an existing \mbox{\hyperlink{classRankingManager}{Ranking\+Manager}} object, and its IO, algorithm, and data objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingManager_af6df75d8fd78dfbc7b1e4e296ea47aa6}\label{classRankingManager_af6df75d8fd78dfbc7b1e4e296ea47aa6}} 
+void \mbox{\hyperlink{classRankingManager_af6df75d8fd78dfbc7b1e4e296ea47aa6}{compute\+Rankings}} ()
+\begin{DoxyCompactList}\small\item\em Runs the ranking program, computing the rankings for restaurants based on performance metrics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRankingManager_a1bb600c2734db3b8f6f7c96fe3bbfbe4}\label{classRankingManager_a1bb600c2734db3b8f6f7c96fe3bbfbe4}} 
+std\+::string \mbox{\hyperlink{classRankingManager_a1bb600c2734db3b8f6f7c96fe3bbfbe4}{filename}}
+\begin{DoxyCompactList}\small\item\em The filename of the data file (if one is passed via command line). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingManager_af73cde2c42b147808f9b5c7f87969592}\label{classRankingManager_af73cde2c42b147808f9b5c7f87969592}} 
+\mbox{\hyperlink{classFileReader}{File\+Reader}} $\ast$ \mbox{\hyperlink{classRankingManager_af73cde2c42b147808f9b5c7f87969592}{file\+Reader}}
+\begin{DoxyCompactList}\small\item\em The file reader for reading in data from a file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingManager_aba7944567768c3933aad7225c12e6be2}\label{classRankingManager_aba7944567768c3933aad7225c12e6be2}} 
+\mbox{\hyperlink{classRankingAlgorithm}{Ranking\+Algorithm}} $\ast$ \mbox{\hyperlink{classRankingManager_aba7944567768c3933aad7225c12e6be2}{ranking\+Algorithm}}
+\begin{DoxyCompactList}\small\item\em The restaurant ranking algorithm for computing performance metrics and ranking the restaurants . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingManager_a0c9a58951c0e9b82b9bfeed0bb59c77a}\label{classRankingManager_a0c9a58951c0e9b82b9bfeed0bb59c77a}} 
+\mbox{\hyperlink{classScreenPrinter}{Screen\+Printer}} $\ast$ \mbox{\hyperlink{classRankingManager_a0c9a58951c0e9b82b9bfeed0bb59c77a}{screen\+Printer}}
+\begin{DoxyCompactList}\small\item\em The screen printer to print results to the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRankingManager_ab6bf76948478b2eb12d469a253174b8a}\label{classRankingManager_ab6bf76948478b2eb12d469a253174b8a}} 
+std\+::vector$<$ \mbox{\hyperlink{classRestaurant}{Restaurant}} $\ast$ $>$ \mbox{\hyperlink{classRankingManager_ab6bf76948478b2eb12d469a253174b8a}{restaurants}}
+\begin{DoxyCompactList}\small\item\em The restaurants being analyzed and ranked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the driver for the ranking program, controlling IO, algorithm, and data objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRankingManager_a585d291d39a2a1e5009a82a81345e1bc}\label{classRankingManager_a585d291d39a2a1e5009a82a81345e1bc}} 
+\index{RankingManager@{RankingManager}!RankingManager@{RankingManager}}
+\index{RankingManager@{RankingManager}!RankingManager@{RankingManager}}
+\doxysubsubsection{\texorpdfstring{RankingManager()}{RankingManager()}}
+{\footnotesize\ttfamily Ranking\+Manager\+::\+Ranking\+Manager (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classRankingManager}{Ranking\+Manager}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the data file (if one is passed via command line). ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Ranking\+Manager.\+h\item 
+/home/ljkarel/\+Desktop/\+Delaget/\+Restaurant\+Ranking/src/Ranking\+Manager.\+cpp\end{DoxyCompactItemize}
